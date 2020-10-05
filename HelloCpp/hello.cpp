@@ -1,12 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    cout<<"hello\n";
-    for(int i=0; i<4; i++){
-        if(i%2==0){
-            cout<<i<<endl;
-        }
+int main()
+{
+    string fellow = "world";
+    cout << "Hello " << fellow << endl;
+    while (fellow != "exit")
+    {
+        cout << "Introduce yourself: ";
+        cout.flush();
+        getline(cin, fellow);
+        cout << "Hello " << fellow << endl;
     }
 }
 
