@@ -10,7 +10,9 @@ int main()
         cout << "Introduce yourself: ";
         cout.flush();
         getline(cin, fellow);
-        cout << "Hello " << fellow << endl;
+        if(fellow != "exit") cout << "Hello " << fellow << endl;
     }
 }
 
+//OBSERWACJE
+//debugowaniie kodu jest bardzo przydatne, gdyz pozwala w prosty i latwy sposob znalezc blad w kodzie
