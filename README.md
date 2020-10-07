@@ -3,7 +3,6 @@
 ## First laboratories
 - [hello.cpp](https://bitbucket.org/Konrad884/object_oriented_programming/src/master/Cpp/hello.cpp) - the very first cpp program
 - [Hello.java](https://bitbucket.org/Konrad884/object_oriented_programming/src/master/Java/Hello/Hello.java) - the very first java program
-- Projects:
   - [Ul.cpp](https://bitbucket.org/Konrad884/object_oriented_programming/src/master/Cpp/Ul.cpp) - Ul project
 
 Content of first tasks:
