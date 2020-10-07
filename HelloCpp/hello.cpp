@@ -5,7 +5,7 @@ int main()
 {
     string fellow = "world";
     cout << "Hello " << fellow << endl;
-    while (fellow != "exit")
+    while(fellow != "exit")
     {
         cout << "Introduce yourself: ";
         cout.flush();
