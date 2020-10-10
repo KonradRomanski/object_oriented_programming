@@ -3,6 +3,15 @@ using namespace std;
 
 class Ul
 {
+    
+    private:
+        int liczba_przczol;
+        int x;
+        int y;
+        double wskaznik; //sredni roczny wskaznik ilosci produkowanego miodu
+        string nazwa_pasieki;
+        int ilosc_uli;
+
     public:
         Ul(int startowa_liczba_przczol)
         {
@@ -86,14 +95,6 @@ class Ul
         {
             return this->ilosc_uli;
         }
-
-    private:
-        int liczba_przczol;
-        int x;
-        int y;
-        double wskaznik; //sredni roczny wskaznik ilosci produkowanego miodu
-        string nazwa_pasieki;
-        int ilosc_uli;
 
 };
 
