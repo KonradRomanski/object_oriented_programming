@@ -27,6 +27,65 @@ public class Elektrownia
         this.stan_magazynowy = nowy_stan;
     }
 
-    public 
+    public boolean maks_przerzucenie()
+    {
+        if (this.stan_magazynowy >= maks_ilosc_wegla) return true;
+        else return false;
+    }
+    
+    public double odczyt_stan_magazynowy()
+    {
+        return this.stan_magazynowy;
+    }
 
+    public void nowa_sprawnosc_elektrowni(double nowa_sprawnosc)
+    {
+        this.sprawnosc_elektrowni = nowa_sprawnosc;
+    }
+
+    public double odczyt_sprawnosc_elektrowni()
+    {
+        return this.sprawnosc_elektrowni;
+    }   
+
+    public void nowa_liczba_przyjetych_pracownikow(int nowa_liczba)
+    {
+        this.liczba_pracownikow = nowa_liczba;
+    }
+
+    public int odczyt_liczby_pracownikow()
+    {
+        return this.liczba_pracownikow;
+    }   
+
+    public boolean liczba_odchodzacych_pracownikow(int odchodzacy)
+    {
+        if (odchodzacy > 0) return false;
+        this.liczba_pracownikow -= odchodzacy;
+        return true; 
+    }
+
+    public boolean liczba_nowych_pracownikow(int nowi)
+    {
+        if (nowi > 0) return false;
+        this.liczba_pracownikow += nowi;
+        return true; 
+    }
+
+    public void nowy_czas_dzialania(double nowy_czas)
+    {
+        this.czas_dzialania = nowy_czas;
+    }
+
+    public double odczyt_czasu_dzialania()
+    {
+        return this.czas_dzialania;
+    }   
+
+}
+
+public static void main(String[] args) {
+    {
+        Elektrownia nelektrownia = new Elektrownia(12);
+    }
 }
