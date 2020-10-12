@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Elektrownia",
+            "request": "launch",
+            "mainClass": "Elektrownia.Elektrownia",
+            "projectName": "object_oriented_programming_b2ea32d1"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
