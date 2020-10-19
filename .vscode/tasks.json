@@ -6,9 +6,12 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
-                "${file}",
+                // "${file}",
+                "${fileDirname}/*${fileExtname}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                // "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/lab2"
+
             ],
             "options": {
                 "cwd": "${workspaceFolder}"

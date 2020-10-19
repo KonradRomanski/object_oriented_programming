@@ -97,32 +97,3 @@ class Ul
         }
 
 };
-
-
-int main(){
-
-    Ul ul(100);
-    cout << "Liczba przczol: " << ul.odczyt_liczby_przczol() << endl;
-
-    if(ul.zmiana_liczby_przczol(10)) cout << "Nowa liczba przczol: " << ul.odczyt_liczby_przczol() << endl;
-    else cout << "zla wartosc\n";
-    cout << endl;
-
-    if(ul.zmiana_polozenia_ula(5, 15)) cout << "Nowe polozenie ula: " << ul.odczyt_polozenia_ula()[0] << "," << ul.odczyt_polozenia_ula()[1] << endl;
-    else cout << "zla wartosc\n";
-    cout << endl;
-
-    cout << "Wskaznik: " << ul.odczyt_wskaznika() << endl;
-    ul.zmiana_wskaznika(5.67);
-    cout << "Nowy wskaznik: " << ul.odczyt_wskaznika() << endl << endl;
-
-    cout << "Nazwa ula: " << ul.odczyt_nazwy() << endl;
-    if(ul.zmiana_nazwy("Ulek")) cout << "Nowa nazwa ula: " << ul.odczyt_nazwy() << endl;
-    else cout << "zla wartosc\n";
-    cout << endl;
-
-    cout << "Ilosc uli: " << ul.odczyt_ilosci() << endl;
-    if(ul.zmiana_ilosci_uli(3)) cout << "Nowa ilosc uli: " << ul.odczyt_ilosci() << endl;
-    else cout << "zla wartosc\n";
-    cout << endl;
-}
