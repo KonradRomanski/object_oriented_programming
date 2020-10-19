@@ -8,3 +8,6 @@
 
 Content of first tasks:
 [lab01-1.pdf](https://ekursy.put.poznan.pl/pluginfile.php/252151/mod_assign/introattachment/0/lab01.pdf?forcedownload=1)
+
+## Second Laboratories
+- [ ]
