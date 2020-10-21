@@ -2,26 +2,15 @@
 
 class Parent {
     public:
-    void method()
-    {
-
-    }
+    void method() { }
     Parent(int field)
     {
         this->field = field;
     }
-    Parent()
-    {
-    }
-    Parent(const Parent &p)
-    {
-    }
-    Parent(Parent &&p)
-    {
-    }
-    ~Parent()
-    {
-    }
+    Parent() { }
+    Parent(const Parent &p) { }
+    Parent(Parent &&p) { }
+    ~Parent() { }
 
     private:
     int field;
@@ -31,17 +20,13 @@ class Parent {
 class Kid: public Parent
 {
     public:
-    Kid (int i): Parent(i), field2(i)
-    {
-    }
-    Kid ()
-    {
-}
+    Kid (int i): Parent(i), field2(i) { }
+    Kid () { }
 
     private:
     int field2;
 
-    };
+};
 
 int main()
 {
