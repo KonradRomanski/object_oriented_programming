@@ -46,6 +46,11 @@ class Ul
             this->ilosc_uli = ulek.ilosc_uli;
         }
 
+        Ul(Ul &&ulek)
+        {
+            
+        }
+
         bool zmiana_liczby_przczol(int liczba)
         {
             if(liczba >= -100 && liczba <= 100 && *(this->liczba_przczol) + liczba >= 0)
