@@ -15,15 +15,35 @@ class Ul
     public:
 
         Ul(): liczba_przczol(nullptr), x(nullptr), y(nullptr), wskaznik(nullptr), nazwa_pasieki(nullptr), ilosc_uli(nullptr){}
+        
+        ~Ul()
+        {
+            delete liczba_przczol;
+            delete x;
+            delete y;
+            delete wskaznik;
+            delete nazwa_pasieki;
+            delete ilosc_uli;
+        }
 
         Ul(int startowa_liczba_przczol)
         {
             this->liczba_przczol = new int (startowa_liczba_przczol);
-            this->x = new int (0);
-            this->y = new int (0);
-            this->wskaznik = new double (0);
             this->nazwa_pasieki = new string ("Nowa pasieka");
-            this->ilosc_uli = new int(0);
+            this->x = nullptr;
+            this->y = nullptr;
+            this->wskaznik = nullptr;
+            this->ilosc_uli = nullptr;
+        }
+
+        Ul(const Ul& ulek)
+        {
+            this->liczba_przczol = ulek.liczba_przczol;
+            this->nazwa_pasieki = ulek.nazwa_pasieki;
+            this->x = ulek.x;
+            this->y = ulek.y;
+            this->wskaznik = ulek.wskaznik;
+            this->ilosc_uli = ulek.ilosc_uli;
         }
 
         bool zmiana_liczby_przczol(int liczba)
@@ -52,12 +72,12 @@ class Ul
             // return false;
         }
 
-        int** odczyt_polozenia_ula()
+        int* odczyt_polozenia_ula()
         {
-            int* result[2];
+            static int result[2];
             // int* temp = result;
-            result[0] = this->x;
-            result[1] = this->y;
+            result[0] = *(this->x);
+            result[1] = *(this->y);
             
             cout << "$$" << result[0] << " " << result[1] << endl;
             
