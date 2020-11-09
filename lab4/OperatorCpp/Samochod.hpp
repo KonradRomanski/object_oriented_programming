@@ -73,7 +73,7 @@ class Samochod
         //Prefixowy
         Samochod & operator++()
         {
-            this->Set_poziom_paliwa(this->Get_poziom_paliwa() + 1);
+            this->Set_poziom_paliwa(this->Get_poziom_paliwa() + 2);
             return *this;
         }
 
@@ -81,16 +81,15 @@ class Samochod
         Samochod operator++(int)
         {
             Samochod copy = *this;
-            this->Set_poziom_paliwa(this->Get_poziom_paliwa() + 1);
+            this->Set_poziom_paliwa(this->Get_poziom_paliwa() + 2);
             return copy;
         }
 
-        Samochod operator,(Samochod a)
+        void operator,(Samochod & a)
         {
             float tmp = this->Get_poziom_paliwa();
             this->Set_poziom_paliwa(a.Get_poziom_paliwa());
             a.Set_poziom_paliwa(tmp);
-            return *this;
         }
 
         Samochod operator|=(int a)
