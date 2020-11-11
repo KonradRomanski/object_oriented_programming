@@ -11,14 +11,16 @@ Content of first tasks:
 
 ## Second Laboratories
 
-Content of first tasks:
+Content of second tasks:
 [lab02.pdf](https://bitbucket.org/Konrad884/object_oriented_programming/src/master/lab2/lab02.pdf)
 
 ## Third Laboratories
 
+Content of third tasks:
 [lab03.pdf](https://bitbucket.org/Konrad884/object_oriented_programming/src/master/lab3/lab03.pdf)
 ## Fourth Laboratories
 
+Content of fourth tasks:
 [lab04.pdf](https://bitbucket.org/Konrad884/object_oriented_programming/src/master/lab4/lab04.pdf)
 
 ## Creator's data
