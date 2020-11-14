@@ -35,6 +35,16 @@ class Samochod
             cout << "model:             " << model << endl;
         }
 
+        void Set_pojemnosc_baku(float new_pojemnosc_baku)
+        {
+            pojemnosc_baku = new_pojemnosc_baku;
+        }
+
+        float Get_pojemnosc_baku()
+        {
+            return pojemnosc_baku;
+        }
+
         void Set_poziom_paliwa(float new_poziom)
         {
             poziom_paliwa = new_poziom;
@@ -42,6 +52,26 @@ class Samochod
         float Get_poziom_paliwa() const
         {
             return poziom_paliwa;
+        }
+
+        void Set_liczba_kilometrow(unsigned int new_liczba_kilometrow)
+        {
+            liczba_kilometrow = new_liczba_kilometrow;
+        }
+
+        unsigned int Get_liczba_kilometrow()
+        {
+            return liczba_kilometrow;
+        }
+
+        void Set_model(string new_model)
+        {
+            model = new_model;
+        }
+
+        string Get_model()
+        {
+            return model;
         }
 
         operator bool() const
