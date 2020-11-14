@@ -39,7 +39,7 @@ class Ul
 
         bool zmiana_polozenia_ula(int a, int b)
         {
-            if (a == int(a) && b == int(b))
+            if (a >= 0 && b >= 0)
             {
                 this->x = a;
                 this->y = b;
