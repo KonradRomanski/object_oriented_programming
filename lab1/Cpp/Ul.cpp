@@ -5,44 +5,44 @@ class Ul
 {
     
     private:
-        int liczba_przczol;
-        int x;
-        int y;
+        int liczba_pszczol;
+        double N;
+        double W;
         double wskaznik; //sredni roczny wskaznik ilosci produkowanego miodu
         string nazwa_pasieki;
         int ilosc_uli;
 
     public:
-        Ul(int startowa_liczba_przczol)
+        Ul(int startowa_liczba_pszczol)
         {
-            this->liczba_przczol = startowa_liczba_przczol;
-            this->x = 0;
-            this->y = 0;
+            this->liczba_pszczol = startowa_liczba_pszczol;
+            this->N = 0;
+            this->W = 0;
             this->wskaznik = 0;
             this->nazwa_pasieki = "Nowa pasieka";
             this->ilosc_uli = 0;
         }
 
-        bool zmiana_liczby_przczol(int liczba)
+        bool zmiana_liczby_pszczol(int liczba)
         {
-            if(liczba >= -100 && liczba <= 100 && this->liczba_przczol + liczba >= 0)
+            if(liczba >= -100 && liczba <= 100 && this->liczba_pszczol + liczba >= 0)
             {
-                this->liczba_przczol += liczba;
+                this->liczba_pszczol += liczba;
                 return true;
             }
             return false;
         }
-        int odczyt_liczby_przczol()
+        int odczyt_liczby_pszczol()
         {
-            return this->liczba_przczol;
+            return this->liczba_pszczol;
         }
 
-        bool zmiana_polozenia_ula(int a, int b)
+        bool zmiana_polozenia_ula(double a, double b)
         {
-            if (a >= 0 && b >= 0)
+            if (a >= -90 && a <= 90 && b >= -180 && b <= 180)
             {
-                this->x = a;
-                this->y = b;
+                this->N = a;
+                this->W = b;
                 return true;
             }
             return false;
@@ -51,8 +51,8 @@ class Ul
         int* odczyt_polozenia_ula()
         {
             static int result[2];
-            result[0] = this->x;
-            result[1] = this->y;
+            result[0] = this->N;
+            result[1] = this->W;
             return result;
         }
 
@@ -102,9 +102,9 @@ class Ul
 int main(){
 
     Ul ul(100);
-    cout << "Liczba przczol: " << ul.odczyt_liczby_przczol() << endl;
+    cout << "Liczba pszczol: " << ul.odczyt_liczby_pszczol() << endl;
 
-    if(ul.zmiana_liczby_przczol(10)) cout << "Nowa liczba przczol: " << ul.odczyt_liczby_przczol() << endl;
+    if(ul.zmiana_liczby_pszczol(10)) cout << "Nowa liczba pszczol: " << ul.odczyt_liczby_pszczol() << endl;
     else cout << "zla wartosc\n";
     cout << endl;
 
