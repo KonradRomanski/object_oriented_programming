@@ -47,7 +47,8 @@ Content of the fourth tasks:
 [lab07.pdf](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab7/lab07.pdf)
 
 ## Information
-Programs used to create the programs
+Programs used to create the programs:
+
 - Visual Studio Enterprise 2019
 - IntelliJ IDEA 2020
 
