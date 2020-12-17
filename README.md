@@ -46,6 +46,9 @@ Content of the fourth tasks:
 Content of the fourth tasks:
 [lab07.pdf](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab7/lab07.pdf)
 
+## Projects
+- [dokumentacja_1.pdf](https://bitbucket.org/Konrad884/object_oriented_programming/src/master/projects/dokumentacja_1.pdf)
+
 ## Information
 Programs used to create the programs:
 
