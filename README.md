@@ -15,7 +15,7 @@ Content of the first tasks:
 Content of the second tasks:
 [lab02.pdf](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab2/lab02.pdf)
 
-## 3. laboratory [in progress...]
+## 3. laboratory
 - [RecyclingJava](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab2/RecyclingJava)
 
 Content of the third tasks:
