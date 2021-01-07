@@ -6,29 +6,30 @@ public class Account
     private int password;
     private String login;
     public Account (){}
-    public Account (int n , Customer c , int p , String l)
+
+    public Account (int a, int n , Customer c , int p , String l)
     {
-        // cialo metody
+        this.accountNumber = a;
+        this.balance = n;
+        this.owner = c;
+        this.password = p;
+        this.login = l;
     }
-    public void login (String l, int passwd)
-        throws AccountLoginFailedException
+    public void login (String l, int passwd) throws AccountLoginFailedException
     {
-        // cialo metody
+        if (l == this.login && passwd == this.password)
+            System.out.println("Successfully logged in!!");
+        else
+            throw new AccountLoginFailedException("Wrong password or login!!", l, passwd);
     }
-    public Customer getCustomer ()
-    {
-        // cialo metody
-    }
-    public int getNumber ()
-    {
-        // cialo metody
-    }
-    public double getBalance ()
-    {
-        // cialo metody
-    }
+    public Customer getCustomer () { return this.owner; }
+    public int getNumber () { return this.accountNumber; }
+    public double getBalance () { return this.balance; }
     public double withdraw (double amount)
     {
-        // cialo metody
+        System.out.println("Wyplacaanie");
+        this.balance -= amount;
+        return this.balance;
     }
+    public String getInfo() { return "accountNumber: " + this.accountNumber + " balance: " + this.balance + " owner: " + this.owner.getName() + " password: " + this.password + " login: " + this.login; }
 }

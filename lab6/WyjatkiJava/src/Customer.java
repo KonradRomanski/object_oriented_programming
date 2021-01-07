@@ -6,18 +6,16 @@ public class Customer
     private String address;
 
     public Customer (){}
-    public Customer ( String s )
+    public Customer ( String n, String s, String P, String a )
     {
-        this.name = "UNKNOWN";
-        this.surname = "UNKNOWN";
-        this.PESEL = "UNKNOWN";
-        this.address = "UNKNOWN";
+        this.name = n;
+        this.surname = s;
+        this.PESEL = P;
+        this.address = a;
     }
 
-    public String getName()
-    {
-        return this.name + " " + this.surname;
-    }
+    public String getName() { return this.name; }
+    public String getSurname() { return this.surname; }
 
     @Override // slowo jest uzywane gdy chcemy nadpisac metode ta zdefiniowana przez nas (tu equals)
     public boolean equals(Object c)
@@ -30,4 +28,3 @@ public class Customer
         return this.name.equals(o.getName());
     }
 }
-// zadanko 4
