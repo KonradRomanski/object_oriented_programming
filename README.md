@@ -33,7 +33,7 @@ Content of the fourth tasks:
 Content of the fourth tasks:
 [lab05.pdf](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab5/lab05.pdf)
 
-## 6. laboratory [in progress...]
+## 6. laboratory
 - [WyjatkiJava](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab6/WyjatkiJava)
 
 Content of the fourth tasks:
