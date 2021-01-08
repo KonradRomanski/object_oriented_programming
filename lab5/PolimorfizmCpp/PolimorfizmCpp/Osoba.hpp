@@ -21,4 +21,5 @@ class Osoba
         void Set_miejsce_zamieszkania(string, int, string, int);
         Adres Get_miejsce_zamieszkania();
         virtual void przedstaw();
+        //virtual void przedstaw() = 0;
 };

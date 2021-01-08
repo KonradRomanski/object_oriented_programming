@@ -101,8 +101,45 @@ int main()
      cout << "==FUNKCJA bar=============" << endl;
      bar(&st);
 
+     Pracownik *p1 = new Pracownik;
+     p1->Set_imie_nazwisko("Jan Dobry");
+     p1->Add_przedmiot("OK");
+     Osoba *o1 = static_cast<Osoba*>(p1);
+     Osoba *o2 = static_cast<Pracownik*>(o1);
+     Osoba *o3 = new Osoba;
+     o3->Set_miejsce_zamieszkania("Poznan", 1111, "Ok", 4);
+     Pracownik *p2 = static_cast<Pracownik*>(o3);
+
+     foo(*p1);
+     foo(*o1);
+     foo(*o2);
+     foo(*o3);
+     foo(*p2);
+
+     Pracownik *p3 = new Pracownik;
+     p3->Add_przedmiot("Przedmiot");
+     Osoba *o4 = dynamic_cast<Osoba*>(o3);
+     //Pracownik *p4 = dynamic_cast<Osoba*>(o4);
+
+     foo(*p3);
+     foo(*o4);
+     //foo(*p4);
+
+
+     Osoba *o5 = new Osoba;
+     Pracownik *p5 = dynamic_cast<Pracownik*>(o5);
+     if(p5 == nullptr) cout << "Blad rzutowania ! " << endl;
+     else p5->przedstaw();
+
      //Funckja foo i bar wywoluje metode z klasy osoba
      //Gdy dodamy slowko virtual, poszukiwane sa redefinicje metody w klasach pochodnych
-
-
+     //mozemy dzieki temu nadpisywac dzedziczone metody i dodawac do nich nowa funkcjonalnosc
+     //po dodaniu slowka virtual wykonywane sa metody z klas pochodnych
+     //wszystkie rzutowania dzialaja poprawnie, zgodnie z zapisem. Pracownik jest osoba wiec mozna rzutowac w sposob ukazany wyzej wraz zachowaniem danych, natomiast klasy bardziej ogolnej na szersza rzutowac nie mozna
+     //mozna zamiasr rzutowac na o2 z o1 robic to bezposrednio z p1 ale to niczego nie zmienia
+     //uzywajac dynamic_cast takze nie mozna rzutowac klasy rodzic na klase dziecko, ktora jest wieksza (zawiera dokladniejsze metody)
+     //dynamic_cast!=nullptr moze prowadzic do bledow
+     //Po dodaniu linijki kodu (18 zad) klasa obiekt staje sie abstrakcyjna
+     //powoduje to niemoznosc utworzenia obiektu tejze klasy i wyrzuca blad
+     //20
 }
