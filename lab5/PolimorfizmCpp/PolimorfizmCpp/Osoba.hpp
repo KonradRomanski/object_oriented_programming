@@ -9,11 +9,16 @@ using namespace std;
 class Osoba
 {
     protected:
-        string imie_nazwisko;
-        Data data_urodzenia;
-        Adres miejsce_zamieszkania;
+        string* imie_nazwisko;
+        Data* data_urodzenia;
+        Adres* miejsce_zamieszkania;
 
     public:
+        Osoba();
+        Osoba(string imie);
+        virtual ~Osoba();
+        Osoba(const Osoba&);
+        Osoba(Osoba&&);
         void Set_imie_nazwisko(string);
         string Get_imie_nazwisko();
         void Set_data_urodzenia(int, int, int);
