@@ -1,7 +1,9 @@
 #include <iostream>
+#include "Logger.hpp"
+#include "Stopper.hpp"
 using namespace std;
 
-class Ul
+class Ul : /*public*/ Logger, public Stopper
 {
     
     private:
@@ -27,7 +29,7 @@ class Ul
         void zmiana_wskaznika(double);
         double odczyt_wskaznika();
         bool zmiana_nazwy(string);
-        string odczyt_nazwy();
+        string odczyt_nazwy() const ;
         bool zmiana_ilosci_uli(int);
         int odczyt_ilosci();
         void odczyt();

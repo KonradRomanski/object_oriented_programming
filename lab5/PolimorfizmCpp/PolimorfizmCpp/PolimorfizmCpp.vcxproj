@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FabrykaOsob.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Osoba.cpp" />
     <ClCompile Include="Student.cpp" />
@@ -146,6 +147,7 @@
   <ItemGroup>
     <ClInclude Include="Adres.hpp" />
     <ClInclude Include="Data.hpp" />
+    <ClInclude Include="FabrykaOsob.hpp" />
     <ClInclude Include="Osoba.hpp" />
     <ClCompile Include="Pracownik.cpp" />
     <ClInclude Include="Pracownik.hpp" />

@@ -1,25 +1,42 @@
 #include "Ul.hpp"
 
-Ul::Ul() : liczba_pszczol(nullptr), N(nullptr), W(nullptr), wskaznik(nullptr), nazwa_pasieki(new string("Nowa pasieka")), ilosc_uli(nullptr) {}
+Ul::Ul() 
+    : 
+    Logger(true), 
+    liczba_pszczol(nullptr), 
+    N(nullptr), W(nullptr), 
+    wskaznik(nullptr), 
+    nazwa_pasieki(new string("Nowa pasieka")), 
+    ilosc_uli(nullptr) 
+{
+    reset();
+}
 
 Ul::~Ul()
 {
-    delete liczba_pszczol;
-    delete N;
-    delete W;
-    delete wskaznik;
-    delete nazwa_pasieki;
-    delete ilosc_uli;
+    if (this->liczba_pszczol) delete liczba_pszczol;
+    if (this->N) delete N;
+    if (this->W) delete W;
+    if (this->wskaznik) delete wskaznik;
+    if (this->nazwa_pasieki) delete nazwa_pasieki;
+    if (this->ilosc_uli) delete ilosc_uli;
 }
 
 Ul::Ul(int startowa_liczba_pszczol)
+    :
+    Logger(true),
+    N(nullptr),
+    W(new double(5)),
+    wskaznik(nullptr),
+    ilosc_uli(nullptr)
 {
+    reset();
     this->liczba_pszczol = new int(startowa_liczba_pszczol);
     this->nazwa_pasieki = new string("Nowa pasieka");
-    this->N = nullptr;
-    this->W = nullptr;
-    this->wskaznik = nullptr;
-    this->ilosc_uli = nullptr;
+    //this->N = nullptr;
+    //this->W = nullptr;
+    //this->wskaznik = nullptr;
+    //this->ilosc_uli = nullptr;
 }
 
 Ul::Ul(const Ul& ulek)
@@ -88,31 +105,42 @@ int* Ul::odczyt_polozenia_ula()
 
 void Ul::zmiana_wskaznika(double nowy_wskaznik)
 {
+    log("zmiana_wskaznika");
     this->wskaznik = new double(nowy_wskaznik);
 }
 
 double Ul::odczyt_wskaznika()
 {
+    log("odczyt_wskaznika");
     return *(this->wskaznik);
 }
 
 bool Ul::zmiana_nazwy(string nowa_nazwa)
 {
+    start();
+    log("zmiana_nazwy");
+
     if (isupper(nowa_nazwa[0]))
     {
         *(this->nazwa_pasieki) = nowa_nazwa;
+        stop();
+        show();
         return true;
     }
+    stop();
+    show();
     return false;
 }
 
-string Ul::odczyt_nazwy()
+string Ul::odczyt_nazwy() const 
 {
-    return *(this->nazwa_pasieki);
+    return *(nazwa_pasieki);
 }
 
 bool Ul::zmiana_ilosci_uli(int nowa_ilosc)
 {
+    log("zmiana_ilosci_uli");
+
     if (nowa_ilosc >= 0)
     {
         this->ilosc_uli = new int(nowa_ilosc);
@@ -123,11 +151,14 @@ bool Ul::zmiana_ilosci_uli(int nowa_ilosc)
 
 int Ul::odczyt_ilosci()
 {
+    log("odczyt_ilosci");
     return *(this->ilosc_uli);
 }
 
 void Ul::odczyt()
 {
+    log("odczyt");
+
     cout << "Polozenie:      " << *this->N << " " << *this->W << endl;
     cout << "Nazwa:          " << this->odczyt_nazwy() << endl;
     cout << "Ilosc:          " << this->odczyt_ilosci() << endl;
