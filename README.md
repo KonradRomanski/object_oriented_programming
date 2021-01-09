@@ -9,7 +9,7 @@
 Content of the first tasks:
 [lab01.pdf](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab1/lab01.pdf)
 
-## 2. laboratory [in progress...]
+## 2. laboratory
 - [ConstructorCpp](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab1/ConstructorCpp)
 
 Content of the second tasks:
@@ -58,3 +58,5 @@ Programs used to create the programs:
 ## Creator's data
 Name: **Konrad Romański**  
 Index: **145329**
+private e-mail: **konrad.romanski4@gmail.com**
+student e-mail: **konrad.romanski@student.put.poznan.pl**
