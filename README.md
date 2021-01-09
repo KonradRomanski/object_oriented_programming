@@ -57,6 +57,6 @@ Programs used to create the programs:
 
 ## Creator's data
 Name: **Konrad Romański**  
-Index: **145329**
+Index: **145329**  
 private e-mail: **konrad.romanski4@gmail.com**  
 student e-mail: **konrad.romanski@student.put.poznan.pl**
