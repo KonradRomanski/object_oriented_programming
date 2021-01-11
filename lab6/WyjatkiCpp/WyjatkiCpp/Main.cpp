@@ -101,12 +101,12 @@ int main()
 }
 
 //noexcept wykonuje sprawdzenie w czasie kompilacji i zwraca true jesli wyrazenie zostalo zadeklarowane aby nie zglaszac zadnych wyjatkow
-//uzywane tu w klasach wyjatkow deklaruje ze funckja bedzie zwracac wyjatki dla neiktorych typow a dla inncyh nie
+//uzywane tu w klasach wyjatkow deklaruje ze funckja bedzie zwracac wyjatki dla niektorych typow a dla inncyh nie
 // override mowi zeby zredefiniowac (nadpisac) funckje bedaca w klasie glownej, sygnatury moga byuc takie same ale zachowanie moze sie roznic
 //w Javie wszytskie metody, ktore mozna przyslonic sa automatycznie wirtualne, w cpp nie
 //w przypadku metod niewirtualnych w cpp to typ statyczny okresla ktora metode wywolac,
 //w przypadku metod wirtualncyh (virtual w cpp i wszystkie metody javy, ktore moga byc nadpisane) jest to srodowisko wykonywawcze
-//w deklaracjach metod nie ma specyfikacji wyjatkow dlatego, ze w cpp wystarczy dodac odpowiednie klasy uzywajac #include
+//w deklaracjach metod nie ma specyfikacji wyjatkow dlatego, ze cpp obsluguje wyjatki podczas wykonywania programu, dopiero jak cos nie zadziala cpp obsluzy wyjatek. W javie wyjatki obslugiwane sa na etapie kompialcji, dlatego jest inaczej
 //po przekroczeniu maksymalnej ilosci elementow zostaje wyrzucony wyjatek, StackFullException
 //przekazywanie wyjatkow po wartosci powoduje blad i jest neibezpieczne, natomiast obslugiwanie ich przez referencje dziala poprawnie i jest bezpieczne
 //przekazywanie przez wartosc powoduje powstanie kopii i zwielokrotnienie vledu wiec jest zle
