@@ -30,6 +30,12 @@
     <ClCompile Include="FabrykaOsob.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FabrykaStudentow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FabrykaPracownikow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Adres.hpp">
@@ -48,6 +54,12 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="FabrykaOsob.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FabrykaStudentow.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FabrykaPracownikow.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

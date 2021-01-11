@@ -4,8 +4,9 @@
 
 using namespace std;
 
-class FabrykaOsob : Osoba
+class FabrykaOsob
 {
+public:
 	virtual Osoba* utworz() = 0;
 	//void utworz();
 };

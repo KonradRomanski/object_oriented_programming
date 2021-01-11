@@ -3,6 +3,8 @@
 #include "Osoba.hpp"
 #include "Student.hpp"
 #include "Pracownik.hpp"
+#include "FabrykaPracownikow.hpp"
+#include "FabrykaStudentow.hpp"
 
 void foo(Osoba& os)
 {
@@ -25,12 +27,12 @@ int main()
     //osoba.przedstaw();
     //
     //---STUDENT----------------------------
-    cout << "\n---STUDENT----------------------------" << endl;
-     Student student;
-     if (!student.Add_ocena("PO", 5))
-         cout << "Bledna ocena!" << endl;
-    
-     int ocena = student.Get_ocena("P");
+    //cout << "\n---STUDENT----------------------------" << endl;
+    // Student student;
+    // if (!student.Add_ocena("PO", 5))
+    //     cout << "Bledna ocena!" << endl;
+    //
+    // int ocena = student.Get_ocena("P");
 
     // if (ocena)
     //     cout << "Ocena z przedmiotu: " << ocena << endl;
@@ -134,6 +136,28 @@ int main()
     // if(p5 == nullptr) cout << "Blad rzutowania ! " << endl;
     // else p5->przedstaw();
 
+    //FabrykaOsob f;
+
+    FabrykaPracownikow* fpr = new FabrykaPracownikow();
+    FabrykaStudentow* fst = new FabrykaStudentow();
+
+    Pracownik* npr = fpr->utworz();
+    npr->przedstaw();
+    Student* nst = fst->utworz();
+    nst->przedstaw();
+
+    map<string, FabrykaOsob*> m;
+    m["pracownik"] = new FabrykaPracownikow();
+    m["student"] = new FabrykaStudentow();
+    
+    vector<Osoba*> tablicaOsob;
+    string currentCommand = "";
+
+    while (currentCommand != "wyjscie")
+    {
+        tablicaOsob.push_back(m[currentCommand]-> utworz());
+    }
+
      //Funckja foo i bar wywoluje metode z klasy osoba
      //Gdy dodamy slowko virtual, poszukiwane sa redefinicje metody w klasach pochodnych
      //mozemy dzieki temu nadpisywac dzedziczone metody i dodawac do nich nowa funkcjonalnosc
@@ -147,5 +171,9 @@ int main()
      //pamiec zwalnia sie nie poprawnie, nie zwalnia sie cala pamiec
      //po dodaniu slowka virtual pamiec zostaje poprawnie zwolniona, kazdy utworzony wczesniej obiekt jest usuwany poprawnie
      //slowko virtual sprawia ze usuwane sa takze wystapienia klasy pochodnej przy uzyciu wskaznika klasy bazowej
-     //24
+     //27
+    //w kontenerze obiekty typu string powiazane sa z wskaznikami na obiekty typu FabrykaPracownikow lub FabrykaOsob
+    //dzieki dziedziczeniu i metodom wirtualnym mozna zaimplementowac ogolnie jako FabrykaOsob
+    //33
+    //if
 }

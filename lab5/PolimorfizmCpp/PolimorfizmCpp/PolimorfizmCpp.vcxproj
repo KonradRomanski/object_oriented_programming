@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FabrykaOsob.cpp" />
+    <ClCompile Include="FabrykaPracownikow.cpp" />
+    <ClCompile Include="FabrykaStudentow.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Osoba.cpp" />
     <ClCompile Include="Student.cpp" />
@@ -148,6 +150,8 @@
     <ClInclude Include="Adres.hpp" />
     <ClInclude Include="Data.hpp" />
     <ClInclude Include="FabrykaOsob.hpp" />
+    <ClInclude Include="FabrykaPracownikow.hpp" />
+    <ClInclude Include="FabrykaStudentow.hpp" />
     <ClInclude Include="Osoba.hpp" />
     <ClCompile Include="Pracownik.cpp" />
     <ClInclude Include="Pracownik.hpp" />
