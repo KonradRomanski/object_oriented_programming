@@ -7,5 +7,5 @@ using namespace std;
 class FabrykaStudentow : public FabrykaOsob
 {
 public:
-	Student* utworz() = 0;
+	Student* utworz();
 };

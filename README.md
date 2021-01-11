@@ -17,6 +17,7 @@ Content of the second tasks:
 
 ## 3. laboratory
 - [RecyclingJava](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab2/RecyclingJava)
+- [RecyclingCpp](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab2/RecyclingCpp)
 
 Content of the third tasks:
 [lab03.pdf](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab3/lab03.pdf)
@@ -27,7 +28,7 @@ Content of the third tasks:
 Content of the fourth tasks:
 [lab04.pdf](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab4/lab04.pdf)
 
-## 5. laboratory [in progress...]
+## 5. laboratory
 - [PolimorfizmCpp](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab5/PolimorfizmCpp)
 
 Content of the fourth tasks:
@@ -35,6 +36,7 @@ Content of the fourth tasks:
 
 ## 6. laboratory
 - [WyjatkiJava](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab6/WyjatkiJava)
+- [WyjatkiCpp](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab6/WyjatkiCpp)
 
 Content of the fourth tasks:
 [lab06.pdf](https://bitbucket.org/Konrad884/object_oriented_programming/src/development/lab6/lab06.pdf)

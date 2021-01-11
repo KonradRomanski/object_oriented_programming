@@ -8,5 +8,5 @@ using namespace std;
 class FabrykaPracownikow : public  FabrykaOsob
 {
 public:
-	Pracownik* utworz() = 0;
+	Pracownik* utworz();
 };
