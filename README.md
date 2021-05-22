@@ -58,7 +58,6 @@ Programs used to create the programs:
 - IntelliJ IDEA 2020
 
 ## Creator's data
-Name: **Konrad RomaÅ„ski**  
-Index: **145329**  
+Name: **Konrad Romañski**  
 private e-mail: **konrad.romanski4@gmail.com**  
 student e-mail: **konrad.romanski@student.put.poznan.pl**
